@@ -1,0 +1,14 @@
+{
+  "name": "handsontable-multi-select",
+  "version": "0.0.1",
+  "description": "Handsontable editor and renderer for multi-select cells",
+  "main": "index.js",
+  "repository": "https://github.com/orestisrodriguez/handsontable-multi-select",
+  "author": "Orestis Rodriguez <orestis@orestisrodriguez.com>",
+  "license": "MIT",
+  "dependencies": {
+    "choices.js": "^9.0.1",
+    "handsontable": "^7.2.2",
+    "ramda": "^0.26.1"
+  }
+}

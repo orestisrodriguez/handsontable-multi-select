@@ -1,0 +1,1 @@
+# handsontable-multi-select
