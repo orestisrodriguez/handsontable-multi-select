@@ -1,17 +1,13 @@
 import { MultiSelectEditor, MultiSelectRenderer } from '../lib/multi-select'
+import data from './users'
+import options from './options'
 
 const sheet = document.getElementById('sheet')
 
-const headers = [ 'Name', 'Email', 'Country' ]
-
-const exampleData = [
-  [ 'Frankie', 'Herrington'  ],
-  [ 'Lois', 'Braun' ],
-  [ 'Leo', 'Vernon' ],
-]
+const headers = [ 'First name', 'Last name', 'Email', 'Job title', 'Country' ]
 
 new Handsontable(sheet, {
-  data: exampleData,
+  data,
   licenseKey: 'non-commercial-and-evaluation',
   rowHeaders: true,
   colHeaders: headers,
@@ -20,16 +16,14 @@ new Handsontable(sheet, {
   columns: [
     {},
     {},
+    {},
+    {},
     {
       editor: MultiSelectEditor,
       renderer: MultiSelectRenderer,
       select: {
         config: {},
-        options: [
-          { key: 'se', text: 'Sweden' },
-          { key: 'us', text: 'United States' },
-          { key: 'br', text: 'Brazil' },
-        ]
+        options
       }
     }
   ]
