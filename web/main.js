@@ -12,8 +12,11 @@ const exampleData = [
 
 new Handsontable(sheet, {
   data: exampleData,
+  licenseKey: 'non-commercial-and-evaluation',
   rowHeaders: true,
   colHeaders: headers,
+  width: '60%',
+  stretchH: 'all',
   columns: [
     {},
     {},

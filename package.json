@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "prepublishOnly": "mkdir -p dist && babel lib/multi-select.js > dist/multi-select.js",
-    "demo": "rollup web/main.js --file web/bundle.js --format iife -g handsontable/dist/handsontable.full:Handsontable,ramda:R,choices.js:Choices"
+    "demo": "rollup -c web/rollup.config.js"
   },
   "dependencies": {
     "choices.js": "^9.0.1",
@@ -19,7 +19,8 @@
     "@babel/cli": "^7.7.4",
     "@babel/core": "^7.7.4",
     "@babel/preset-env": "^7.7.4",
-    "rollup": "^1.27.8"
+    "rollup": "^1.27.8",
+    "rollup-plugin-serve": "^1.0.1"
   },
   "files": [
     "dist",
