@@ -1,50 +1,7 @@
-body {
-  margin: 0;
-}
-
-.content {
-  width: 100%;
-  margin: 10rem 0;
-  text-align: center;
-  font-family: 'Source Sans Pro', sans-serif;
-  color: #363537;
-}
-
-.content h1, p {
-  margin: 0;
-}
-
-.content h1 {
-  color: #363537;
-  font-family: 'Montserrat', 'sans-serif';
-  margin-bottom: 1rem;
-}
-
-.content p {
-  margin-bottom: 1rem;
-}
-
-.content code {
-  display: inline-block;
-  color: #EF2D56;
-  border: 1px solid #eeeeee;
-
-  padding: 0.5rem 1rem;
-  margin-bottom: 1rem;
-}
-
-.content #sheet {
-  margin: 2rem auto 0 auto;
-  text-align: initial;
-}
-
-.multi-select__multi-select__choices {
-  background-color: #ffffff;
-}
-
 /*===============================
 =            multi-select__choices            =
 ===============================*/
+
 .multi-select__choices {
   position: relative;
   overflow: hidden;

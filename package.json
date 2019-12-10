@@ -20,6 +20,7 @@
     "@babel/core": "^7.7.4",
     "@babel/preset-env": "^7.7.4",
     "rollup": "^1.27.8",
+    "rollup-plugin-livereload": "^1.0.4",
     "rollup-plugin-serve": "^1.0.1"
   },
   "files": [
