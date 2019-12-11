@@ -201,14 +201,6 @@
   opacity: 0.5;
 }
 
-.multi-select__choices__heading {
-  font-weight: 600;
-  font-size: 12px;
-  padding: 10px;
-  border-bottom: 1px solid #f7f7f7;
-  color: gray;
-}
-
 .multi-select__choices__button {
   text-indent: -9999px;
   -webkit-appearance: none;
