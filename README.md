@@ -5,7 +5,7 @@ Handsontable editor and renderer for a multi select input using chosen.js, no jQ
 ## Installation
 
 ```bash
-yarn install handsontable-multi-select
+yarn add handsontable-multi-select
 ```
 
 ## Usage
@@ -32,10 +32,13 @@ new Handsontable(el, {
 })
 ```
 
+We also provide default styles for the selector in CSS and LESS that are adapted to handsontable.
+
+`handsontable-multi-select/dist/css/handsontable-multi-select.css` or `handsontable-multi-select/lib/multi-select.less`
+
 ## To do
 
 - testing for editor.
-- create basic stylesheet for chosen.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

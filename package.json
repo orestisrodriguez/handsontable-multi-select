@@ -7,7 +7,7 @@
   "author": "Orestis Rodriguez <orestis@orestisrodriguez.com>",
   "license": "MIT",
   "scripts": {
-    "prepublishOnly": "mkdir -p dist && babel lib/multi-select.js > dist/multi-select.js",
+    "prepublishOnly": "mkdir -p dist/js && mkdir -p dist/css && babel lib/multi-select.js > dist/css/handsontable-multi-select.css && lessc lib/multi-select.less dist/css/handsontable-multi-select.css",
     "demo": "rollup -c web/rollup.config.js"
   },
   "dependencies": {
@@ -19,6 +19,7 @@
     "@babel/cli": "^7.7.4",
     "@babel/core": "^7.7.4",
     "@babel/preset-env": "^7.7.4",
+    "less": "^3.10.3",
     "rollup": "^1.27.8",
     "rollup-plugin-livereload": "^1.0.4",
     "rollup-plugin-serve": "^1.0.1"
@@ -26,6 +27,7 @@
   "files": [
     "dist",
     "lib/multi-select.js",
+    "lib/multi-select.less",
     "README.md"
   ]
 }
