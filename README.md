@@ -56,6 +56,7 @@ You can view a demo of the plugin by cloning this repository and `yarn demo`
 ## To do
 
 - testing for editor
+=======
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
