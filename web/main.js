@@ -1,3 +1,4 @@
+import { pluck } from 'ramda'
 import { MultiSelectEditor, MultiSelectRenderer } from '../lib/multi-select'
 import data from './users'
 import options from './options'
@@ -22,8 +23,16 @@ new Handsontable(sheet, {
       editor: MultiSelectEditor,
       renderer: MultiSelectRenderer,
       select: {
-        config: {},
-        options
+        config: {
+          valueKey: 'key',
+          labelKey: 'text',
+          separator: ';',
+        },
+        options (source, process) {
+          return new Promise((resolve) => {
+            setTimeout(resolve, 500, options)
+          })
+        },
       }
     }
   ]
