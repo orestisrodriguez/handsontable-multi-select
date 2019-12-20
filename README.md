@@ -16,7 +16,6 @@ Just import the editor class and renderer function from handsontable-multi-selec
 
 Options can be passed as an array or as a callback function as below.
 
-
 ```javascript
 import { MultiSelectEditor, MultiSelectRenderer } from 'handsontable-multi-select'
 import 'handsontable-multi-select/dist/css/handsontable-multi-select.css'
@@ -56,7 +55,6 @@ You can view a demo of the plugin by cloning this repository and `yarn demo`
 ## To do
 
 - testing for editor
-=======
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
