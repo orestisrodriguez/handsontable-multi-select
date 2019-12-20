@@ -4,28 +4,25 @@ export default [
     "Veum",
     "Arturo53@yahoo.com",
     "Dynamic Group Liaison",
-    "Argentina"
   ],
   [
     "Kenneth",
     "Graham",
     "Dario_Simonis@hotmail.com",
     "Corporate Mobility Producer",
-    "Argentina"
   ],
   [
     "Cassandra",
     "Schaefer",
     "Parker64@yahoo.com",
     "Future Applications Analyst",
-    "Argentina"
   ],
   [
     "Oswaldo",
     "Gulgowski",
     "Ruth40@yahoo.com",
     "Regional Response Executive",
-    "Argentina"
+    "Brazil;China"
   ],
   [
     "Mavis",
