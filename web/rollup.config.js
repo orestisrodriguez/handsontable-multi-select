@@ -7,7 +7,7 @@ export default {
     file: `${__dirname}/bundle.js`,
     format: 'iife',
     globals: {
-      'handsontable/dist/handsontable.full': 'Handsontable',
+      'handsontable': 'Handsontable',
       'ramda': 'R',
       'choices.js': 'Choices'
     },
