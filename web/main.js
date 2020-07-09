@@ -9,7 +9,7 @@ const headers = [ 'First name', 'Last name', 'Email', 'Job title', 'Country', 'S
 
 const numberOptions = times((i) => ({ key: i, value: i }), 50)
 
-new Handsontable(sheet, {
+const hot = new Handsontable(sheet, {
   data,
   licenseKey: 'non-commercial-and-evaluation',
   rowHeaders: true,
@@ -44,9 +44,7 @@ new Handsontable(sheet, {
       select: {
         config: {
           valueKey: 'key',
-          labelKey: 'text',
-          separator: ';',
-          maxItemCount: 1,
+          labelKey: 'value',
         },
         options (source, process) {
           return new Promise((resolve) => {
