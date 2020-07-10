@@ -3,6 +3,9 @@ import { MultiSelectEditor, MultiSelectRenderer } from '../lib/multi-select'
 import data from './users'
 import options from './options'
 
+import './style.less'
+import '../lib/multi-select.less'
+
 const sheet = document.getElementById('sheet')
 
 const headers = [ 'First name', 'Last name', 'Email', 'Job title', 'Country', 'Single Number', 'Multi Numbers' ]
