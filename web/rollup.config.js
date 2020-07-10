@@ -1,5 +1,6 @@
 import serve from 'rollup-plugin-serve'
 import livereload from 'rollup-plugin-livereload'
+import styles from 'rollup-plugin-styles'
 
 export default {
   input: `${__dirname}/main.js`,
@@ -14,6 +15,7 @@ export default {
   },
   plugins: [
     serve('web'),
+    styles(),
     livereload()
   ]
 }

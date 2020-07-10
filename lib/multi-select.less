@@ -9,6 +9,8 @@
 @multi-select-choices-input-color: #ffffff;
 
 .multi-select__choices {
+  width: fit-content;
+  min-width: 10rem;
 	position: relative;
 	overflow: hidden;
 	margin-bottom: 24px;
@@ -181,12 +183,8 @@
 .multi-select__choices__list--dropdown {
 	visibility: hidden;
 	z-index: 1;
-	position: absolute;
-	width: 100%;
 	background-color: @multi-select-choices-input-color;
 	border: 1px solid @multi-select-choices-border-color;
-	top: 100%;
-	margin-top: -1px;
 	overflow: hidden;
 	word-break: break-all;
 	will-change: visibility;
@@ -200,6 +198,7 @@
 	.multi-select__choices__item {
 		position: relative;
 		padding: 5px;
+    padding-right: 2rem;
 		font-size: 12px;
 	}
 	.multi-select__choices__item--selectable.is-highlighted {
