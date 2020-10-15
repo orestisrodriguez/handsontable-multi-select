@@ -105,3 +105,4 @@ dist
 
 # Other
 web/bundle.js
+.idea/
