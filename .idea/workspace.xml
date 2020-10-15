@@ -5,9 +5,12 @@
       <change afterPath="$PROJECT_DIR$/lib/utils.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/multi-select.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/multi-select.js" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/lib/multi-select.less" beforeDir="false" afterPath="$PROJECT_DIR$/lib/multi-select.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+=======
+>>>>>>> d55ab9e... Bug Fix: .bind called only once
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +47,7 @@
       <option name="presentableId" value="Default" />
       <updated>1602771275838</updated>
       <workItem from="1602771277577" duration="1313000" />
-      <workItem from="1602772623050" duration="10066000" />
+      <workItem from="1602772623050" duration="10382000" />
     </task>
     <servers />
   </component>
