@@ -8,12 +8,12 @@
   "license": "MIT",
   "scripts": {
     "prepublishOnly": "mkdir -p dist/js && mkdir -p dist/css && babel lib/multi-select.js > dist/js/handsontable-multi-select.js && lessc lib/multi-select.less dist/css/handsontable-multi-select.css",
-    "demo": "rollup -c web/rollup.config.js"
+    "demo": "rollup -c web/rollup.config.js",
+    "livereload": "yarn run rollup --config \"./web/rollup.config.js\" --watch"
   },
   "dependencies": {
     "choices.js": "^9.0.1",
-    "handsontable": "^0.27.0",
-    "ramda": "^0.26.1"
+    "handsontable": "^7.2.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.4",
