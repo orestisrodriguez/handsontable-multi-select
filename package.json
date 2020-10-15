@@ -8,7 +8,8 @@
   "license": "MIT",
   "scripts": {
     "prepublishOnly": "mkdir -p dist/js && mkdir -p dist/css && babel lib/multi-select.js > dist/js/handsontable-multi-select.js && lessc lib/multi-select.less dist/css/handsontable-multi-select.css",
-    "demo": "rollup -c web/rollup.config.js"
+    "demo": "rollup -c web/rollup.config.js",
+    "livereload": "yarn run rollup --config \"./web/rollup.config.js\" --watch"
   },
   "dependencies": {
     "choices.js": "^9.0.1",
