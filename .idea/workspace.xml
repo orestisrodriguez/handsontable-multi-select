@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d806241-b4a9-49d9-80ae-cdd6a6e857eb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/utils.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/multi-select.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/multi-select.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/multi-select.less" beforeDir="false" afterPath="$PROJECT_DIR$/lib/multi-select.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,18 +44,25 @@
       <option name="presentableId" value="Default" />
       <updated>1602771275838</updated>
       <workItem from="1602771277577" duration="1313000" />
-      <workItem from="1602772623050" duration="7247000" />
+      <workItem from="1602772623050" duration="10066000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="579" y="148" width="353" height="637" key="#Less" timestamp="1602771960759">
+    <state x="450" y="152" width="611" height="630" key="#JavaScript" timestamp="1602784355291">
       <screen x="72" y="27" width="1368" height="873" />
     </state>
-    <state x="579" y="148" width="353" height="637" key="#Less/72.27.1368.873@72.27.1368.873" timestamp="1602771960759" />
+    <state x="450" y="152" width="611" height="630" key="#JavaScript/72.27.1368.873@72.27.1368.873" timestamp="1602784355291" />
+    <state x="579" y="148" width="353" height="637" key="#Less" timestamp="1602784365979">
+      <screen x="72" y="27" width="1368" height="873" />
+    </state>
+    <state x="579" y="148" width="353" height="637" key="#Less/72.27.1368.873@72.27.1368.873" timestamp="1602784365979" />
     <state x="420" y="207" key="run.anything.popup" timestamp="1602773911721">
       <screen x="72" y="27" width="1368" height="873" />
     </state>
