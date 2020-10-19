@@ -1,4 +1,3 @@
-import {pluck, times} from 'ramda'
 import {MultiSelectEditor, MultiSelectRenderer} from '../lib/multi-select'
 import data from './users'
 import options from './options'
@@ -11,7 +10,7 @@ const sheet = document.getElementById('sheet')
 const headers = ['First name', 'Last name', 'Email', 'Job title', 'Country', 'Single Number', 'Multi Numbers']
 
 const numberOptions = ((count) => {
-  let numbers = [];
+  let numbers = []
 
   for (let ma = 1; ma <= count; ++ma) {
     numbers.push({
