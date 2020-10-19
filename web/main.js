@@ -1,5 +1,5 @@
-import { pluck, times } from 'ramda'
-import { MultiSelectEditor, MultiSelectRenderer } from '../lib/multi-select'
+import {pluck, times} from 'ramda'
+import {MultiSelectEditor, MultiSelectRenderer} from '../lib/multi-select'
 import data from './users'
 import options from './options'
 
@@ -8,9 +8,20 @@ import '../lib/multi-select.less'
 
 const sheet = document.getElementById('sheet')
 
-const headers = [ 'First name', 'Last name', 'Email', 'Job title', 'Country', 'Single Number', 'Multi Numbers' ]
+const headers = ['First name', 'Last name', 'Email', 'Job title', 'Country', 'Single Number', 'Multi Numbers']
 
-const numberOptions = times((i) => ({ key: i, value: i }), 50)
+const numberOptions = ((count) => {
+  let numbers = [];
+
+  for (let ma = 1; ma <= count; ++ma) {
+    numbers.push({
+      key: ma,
+      value: ma
+    })
+  }
+
+  return numbers
+})(50)
 
 const hot = new Handsontable(sheet, {
   data,
@@ -34,7 +45,7 @@ const hot = new Handsontable(sheet, {
           labelKey: 'text',
           separator: ';',
         },
-        options (source, process) {
+        options(source, process) {
           return new Promise((resolve) => {
             setTimeout(resolve, 500, options)
           })
@@ -49,7 +60,7 @@ const hot = new Handsontable(sheet, {
           valueKey: 'key',
           labelKey: 'value',
         },
-        options (source, process) {
+        options(source, process) {
           return new Promise((resolve) => {
             setTimeout(resolve, 500, numberOptions)
           })
