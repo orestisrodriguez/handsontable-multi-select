@@ -16,6 +16,7 @@
 .multi-select__editor {
   @border-thickness: 2px;
   @options-horizontal-padding: 5px;
+  @label-item-height: 20px;
 
   height: auto;
   width: ~"calc(100% - (@{border-thickness} * 2))";
@@ -30,14 +31,17 @@
 
   .multi-select__editor-label {
     @horizontal-margin: 3px;
+    @horizontal-padding: 4px;
 
     background: #f5f5f5;
     border-radius: 3px;
     color: black;
     user-select: none;
-    padding: 0 4px;
+    padding: 0 @horizontal-padding;
     cursor: pointer;
+    max-width:~"calc(100% - @{horizontal-padding} * 2 - @{horizontal-margin} * 2)";
     display: flex;
+    min-height: @label-item-height;
     align-items: center;
     margin: @horizontal-margin 3px;
 
@@ -65,15 +69,31 @@
   .multi-select__editor-input {
     @horizontal-padding: 5px;
 
-    width: ~"calc(100% - @{horizontal-padding})";
-    min-height: 25px;
+    width: 100%;
+    overflow: hidden;
     padding: @horizontal-padding 0;
     margin: 0;
     display: flex;
     flex-wrap: wrap;
     border: none;
     background: white;
-    border-bottom: 1px solid rgba(black, .1);
+
+    .multi-select__editor-input-search {
+      @input-horizontal-padding: 5px;
+
+      flex-shrink: 0;
+      outline: 0;
+      width:1px;
+      max-width:~"calc(100% - @{input-horizontal-padding} * 2)";
+      border: none;
+      padding: 0 @input-horizontal-padding;
+      height: @label-item-height;
+      font-size: 16px;
+
+      input {
+        min-width:4px;
+      }
+    }
   }
 
   .multi-select__editor-alert {
@@ -88,6 +108,8 @@
     padding: 3px @options-horizontal-padding;
     flex-shrink: 0;
     display: none;
+    overflow: hidden;
+    width: ~"calc(100% - @{options-horizontal-padding} * 2)";
 
     &--visible {
       display: block;
@@ -101,8 +123,10 @@
     width: 100%;
     max-height: 10rem;
     overflow: auto;
+    border-top: 1px solid rgba(black, .1);
 
     &__item {
+      width:~"calc(100% - @{options-horizontal-padding} * 2)";
       padding: 4px @options-horizontal-padding;
       border-bottom: 1px solid rgba(black, .2);
       cursor: pointer;
