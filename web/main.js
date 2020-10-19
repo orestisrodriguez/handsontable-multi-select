@@ -16,7 +16,7 @@ const numberOptions = ((count) => {
   for (let ma = 1; ma <= count; ++ma) {
     numbers.push({
       key: ma,
-      value: ma
+      text: ma
     })
   }
 
@@ -58,7 +58,7 @@ const hot = new Handsontable(sheet, {
       select: {
         config: {
           valueKey: 'key',
-          labelKey: 'value',
+          labelKey: 'text',
         },
         options(source, process) {
           return new Promise((resolve) => {
