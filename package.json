@@ -12,8 +12,7 @@
     "livereload": "yarn run rollup --config \"./web/rollup.config.js\" --watch"
   },
   "dependencies": {
-    "choices.js": "^9.0.1",
-    "handsontable": "^0.27.0"
+    "handsontable": "0.27.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.4",
