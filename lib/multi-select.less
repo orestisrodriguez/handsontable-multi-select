@@ -39,7 +39,7 @@
     user-select: none;
     padding: 0 @horizontal-padding;
     cursor: pointer;
-    max-width:~"calc(100% - @{horizontal-padding} * 2 - @{horizontal-margin} * 2)";
+    max-width: ~"calc(100% - @{horizontal-padding} * 2 - @{horizontal-margin} * 2)";
     display: flex;
     min-height: @label-item-height;
     align-items: center;
@@ -83,15 +83,15 @@
 
       flex-shrink: 0;
       outline: 0;
-      width:1px;
-      max-width:~"calc(100% - @{input-horizontal-padding} * 2)";
+      width: 1px;
+      max-width: ~"calc(100% - @{input-horizontal-padding} * 2)";
       border: none;
       padding: 0 @input-horizontal-padding;
       height: @label-item-height;
       font-size: 16px;
 
       input {
-        min-width:4px;
+        min-width: 4px;
       }
     }
   }
@@ -126,9 +126,11 @@
     border-top: 1px solid rgba(black, .1);
 
     &__item {
-      width:~"calc(100% - @{options-horizontal-padding} * 2)";
+      @item-border-thickness: 1px;
+
+      width: ~"calc(100% - @{options-horizontal-padding} * 2 - @{item-border-thickness} * 2)";
       padding: 4px @options-horizontal-padding;
-      border-bottom: 1px solid rgba(black, .2);
+      border-bottom: @item-border-thickness solid rgba(black, .2);
       cursor: pointer;
       display: flex;
       align-items: center;
@@ -136,7 +138,7 @@
       justify-content: space-between;
       transition: 80ms;
 
-      &[hovered] {
+      &--hovered {
         background: @multi-select-choices-selected-background-color;
         color: white;
 
