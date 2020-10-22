@@ -8,14 +8,12 @@ export default {
     file: `${__dirname}/bundle.js`,
     format: 'iife',
     globals: {
-      'handsontable': 'Handsontable',
-      'ramda': 'R',
-      'choices.js': 'Choices'
+      handsontable: 'Handsontable',
     },
   },
   plugins: [
     serve('web'),
     styles(),
-    livereload()
-  ]
+    livereload(),
+  ],
 }
