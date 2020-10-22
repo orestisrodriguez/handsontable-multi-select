@@ -9,17 +9,19 @@
   "scripts": {
     "prepublishOnly": "mkdir -p dist/js && mkdir -p dist/css && babel lib/multi-select.js > dist/js/handsontable-multi-select.js && lessc lib/multi-select.less dist/css/handsontable-multi-select.css",
     "demo": "rollup -c web/rollup.config.js",
-    "livereload": "yarn run rollup --config \"./web/rollup.config.js\" --watch"
+    "livereload": "yarn run rollup --config \"./web/rollup.config.js\" --watch",
+    "checkcode": "./node_modules/.bin/eslint ./"
   },
   "dependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.11.0",
+    "eslint-config-airbnb-base": "^14.2.0",
     "handsontable": "^7.2.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.4",
     "@babel/core": "^7.10.4",
     "@babel/preset-env": "^7.10.4",
-    "eslint": "^7.11.0",
-    "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.21.2",
     "less": "^3.11.3",
     "rollup": "^2.21.0",
