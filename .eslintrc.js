@@ -1,13 +1,13 @@
 module.exports = {
   env: {
     browser: true,
+    es2021: true,
   },
-  parser: 'babel-eslint',
   extends: [
     'airbnb-base',
   ],
   parserOptions: {
-    ecmaVersion: 7,
+    ecmaVersion: 12,
     sourceType: 'module',
   },
   rules: {
@@ -24,9 +24,6 @@ module.exports = {
       },
     ],
     'func-names': 0,
-    'max-len': 0,
-    'no-multi-assign': 0,
-    'no-return-assign': 0,
     'function-paren-newline': 'off',
     'global-require': 0,
     'import/extensions': 0,
