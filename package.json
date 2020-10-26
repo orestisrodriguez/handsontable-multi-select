@@ -2,15 +2,14 @@
   "name": "handsontable-multi-select",
   "version": "0.27.9",
   "description": "Handsontable editor and renderer for multi-select cells",
-  "main": "dist/multi-select.js",
+  "main": "dist/js/handsontable-multi-select.js",
   "repository": "https://github.com/orestisrodriguez/handsontable-multi-select",
   "author": "Orestis Rodriguez <orestis@orestisrodriguez.com>",
   "license": "MIT",
   "scripts": {
     "prepublishOnly": "mkdir -p dist/js && mkdir -p dist/css && babel lib/multi-select.js > dist/js/handsontable-multi-select.js && lessc lib/multi-select.less dist/css/handsontable-multi-select.css",
     "demo": "rollup -c web/rollup.config.js",
-    "livereload": "yarn run rollup --config \"./web/rollup.config.js\" --watch",
-    "checkcode": "./node_modules/.bin/eslint ./"
+    "lint": "yarn eslint lib web"
   },
   "dependencies": {
     "handsontable": "0.27.0"

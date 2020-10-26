@@ -1,3 +1,4 @@
+import Handsontable from 'handsontable'
 import { MultiSelectEditor, MultiSelectRenderer } from '../lib/multi-select'
 import data from './users'
 import options from './options'
@@ -6,21 +7,14 @@ import './style.less'
 import '../lib/multi-select.less'
 
 const sheet = document.getElementById('sheet')
-
 const headers = [ 'First name', 'Last name', 'Email', 'Job title', 'Country', 'Single Number', 'Multi Numbers' ]
 
-const numberOptions = ((count) => {
-  const numbers = []
-
-  for (let ma = 1; ma <= count; ma += 1) {
-    numbers.push({
-      key: ma,
-      text: ma,
-    })
-  }
-
-  return numbers
-})(50)
+const numberOptions = Array(50)
+  .fill(null)
+  .map((_, index) => ({
+    key: index,
+    value: index,
+  }))
 
 Handsontable(sheet, {
   data,
@@ -44,7 +38,7 @@ Handsontable(sheet, {
           labelKey: 'text',
           separator: ';',
         },
-        options () {
+        options (source, process) {
           return new Promise((resolve) => {
             setTimeout(resolve, 500, options)
           })
@@ -57,7 +51,7 @@ Handsontable(sheet, {
       select: {
         config: {
           valueKey: 'key',
-          labelKey: 'text',
+          labelKey: 'value',
         },
         options () {
           return new Promise((resolve) => {
