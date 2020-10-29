@@ -38,7 +38,7 @@ Handsontable(sheet, {
           labelKey: 'text',
           separator: ';',
         },
-        options (source, process) {
+        options (source, value) {
           return new Promise((resolve) => {
             setTimeout(resolve, 500, options)
           })
@@ -53,7 +53,7 @@ Handsontable(sheet, {
           valueKey: 'key',
           labelKey: 'value',
         },
-        options () {
+        options (source, value) {
           return new Promise((resolve) => {
             setTimeout(resolve, 500, numberOptions)
           })
