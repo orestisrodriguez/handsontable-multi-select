@@ -1,4 +1,4 @@
-import { pluck, times } from 'ramda'
+import Handsontable from 'handsontable'
 import { MultiSelectEditor, MultiSelectRenderer } from '../lib/multi-select'
 import data from './users'
 import options from './options'
@@ -7,12 +7,16 @@ import './style.less'
 import '../lib/multi-select.less'
 
 const sheet = document.getElementById('sheet')
-
 const headers = [ 'First name', 'Last name', 'Email', 'Job title', 'Country', 'Single Number', 'Multi Numbers' ]
 
-const numberOptions = times((i) => ({ key: i, value: i }), 50)
+const numberOptions = Array(50)
+  .fill(null)
+  .map((_, index) => ({
+    key: index,
+    value: index,
+  }))
 
-const hot = new Handsontable(sheet, {
+Handsontable(sheet, {
   data,
   licenseKey: 'non-commercial-and-evaluation',
   rowHeaders: true,
@@ -34,12 +38,12 @@ const hot = new Handsontable(sheet, {
           labelKey: 'text',
           separator: ';',
         },
-        options (source, process) {
+        options (source, value) {
           return new Promise((resolve) => {
             setTimeout(resolve, 500, options)
           })
         },
-      }
+      },
     }, {
       type: 'numeric',
       editor: MultiSelectEditor,
@@ -49,12 +53,12 @@ const hot = new Handsontable(sheet, {
           valueKey: 'key',
           labelKey: 'value',
         },
-        options (source, process) {
+        options (source, value) {
           return new Promise((resolve) => {
             setTimeout(resolve, 500, numberOptions)
           })
         },
-      }
-    }
-  ]
+      },
+    },
+  ],
 })

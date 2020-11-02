@@ -34,7 +34,7 @@ new Handsontable(el, {
           ...
         ]
         --- OR ---
-        options (source, process) {
+        options (process) {
           return new Promise((resolve) => setTimeout(resolve, 500, [ ... ]))
         }
       }
