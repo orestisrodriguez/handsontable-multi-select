@@ -52,6 +52,7 @@ Handsontable(sheet, {
         config: {
           valueKey: 'key',
           labelKey: 'value',
+          isMultiple: false,
         },
         options (source, value) {
           return new Promise((resolve) => {
