@@ -215,6 +215,10 @@
   word-break: break-all;
   will-change: visibility;
 
+  &:empty {
+    display:none;
+  }
+
   .multi-select__choices__list {
     position: relative;
     max-height: 200px;
