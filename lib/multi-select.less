@@ -76,10 +76,7 @@
   .multi-select__choices__button {
     position: relative;
     display: inline-block;
-    margin-top: 0;
-    margin-right: -2px;
-    margin-bottom: 0;
-    margin-left: 0px;
+    margin: 0 -2px 0 0px;
     padding-left: 13px;
     border-left: 1px solid @multi-select-choices-selected-background-color;
     background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEiIGhlaWdodD0iMjEiIHZpZXdCb3g9IjAgMCAyMSAyMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjRkZGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0yLjU5Mi4wNDRsMTguMzY0IDE4LjM2NC0yLjU0OCAyLjU0OEwuMDQ0IDIuNTkyeiIvPjxwYXRoIGQ9Ik0wIDE4LjM2NEwxOC4zNjQgMGwyLjU0OCAyLjU0OEwyLjU0OCAyMC45MTJ6Ii8+PC9nPjwvc3ZnPg==);
@@ -165,8 +162,8 @@
       color: white;
       height: @icon-size;
       width: @icon-size;
-      display:inline-block;
-      margin-left:5px;
+      display: inline-block;
+      margin-left: 5px;
     }
   }
 
@@ -276,6 +273,10 @@
 
 .multi-select__choices__item--hidden {
   display: none
+}
+
+.multi-select__choices__message {
+  font-size: 0.9rem;
 }
 
 .multi-select__choices__button {
