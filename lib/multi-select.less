@@ -7,6 +7,7 @@
 @multi-select-choices-disabled-background-color: #eaeaea;
 @multi-select-choices-border-color: #b7b7b7;
 @multi-select-choices-input-color: #ffffff;
+@multi-select-choices-hovered-background: #ededed;
 
 .handsontableInputHolder {
   /* specific to version 0.27.0 */
@@ -216,7 +217,7 @@
   will-change: visibility;
 
   &:empty {
-    display:none;
+    display: none;
   }
 
   .multi-select__choices__list {
@@ -232,6 +233,11 @@
     padding: 5px 2rem 5px 5px;
     color: black;
     font-size: 12px;
+
+    &:hover {
+      transition: 100ms;
+      background: @multi-select-choices-hovered-background;
+    }
   }
 
   .multi-select__choices__item--selectable.is-highlighted {
