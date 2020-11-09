@@ -235,18 +235,18 @@
     color: black;
     font-size: 12px;
 
-    &:hover {
+    &.is-highlighted {
+      background-color: @multi-select-choices-selected-background-color;
+      color: @multi-select-choices-selected-text-color;
+
+      &:after {
+        opacity: 0.5;
+      }
+    }
+
+    &:hover:not(.is-highlighted) {
       transition: 100ms;
       background: @multi-select-choices-hovered-background;
-    }
-  }
-
-  .multi-select__choices__item--selectable.is-highlighted {
-    background-color: @multi-select-choices-selected-background-color;
-    color: @multi-select-choices-selected-text-color;
-
-    &:after {
-      opacity: 0.5;
     }
   }
 }
