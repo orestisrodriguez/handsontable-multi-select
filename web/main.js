@@ -38,6 +38,7 @@ Handsontable(sheet, {
           labelKey: 'text',
           separator: ';',
         },
+        readOnly: false,
         options (source, value) {
           return new Promise((resolve) => {
             setTimeout(resolve, 500, options)
