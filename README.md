@@ -33,6 +33,7 @@ new Handsontable(el, {
           valueKey: 'value',
           labelKey: 'label'
         },
+        readOnly: false,
         options: [
           { value: 'SE', label: 'Sweden' },
           ...
