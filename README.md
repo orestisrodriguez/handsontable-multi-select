@@ -27,13 +27,13 @@ new Handsontable(el, {
     {
       editor: MultiSelectEditor,
       renderer: MultiSelectRenderer,
+      readOnly: false,
       select: {
         config: {
           separator: ';',
           valueKey: 'value',
           labelKey: 'label'
         },
-        readOnly: false,
         options: [
           { value: 'SE', label: 'Sweden' },
           ...
