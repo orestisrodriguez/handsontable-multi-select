@@ -12,6 +12,7 @@
 .handsontableInputHolder {
   /* specific to version 0.27.0 */
   z-index: 40;
+  min-width: max-content;
 }
 
 .multi-select__choices {
@@ -21,6 +22,7 @@
   position: relative;
   overflow: hidden;
   margin-bottom: 24px;
+  max-width: 500px;
   font-size: 16px;
   background: white;
 
@@ -38,14 +40,14 @@
 
   &.is-fetching .multi-select__choices__inner {
     &:before {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
       background: @multi-select-choices-disabled-background-color;
-      opacity: .4;
+      opacity: 0.4;
       cursor: wait;
       z-index: 5;
     }
@@ -82,13 +84,13 @@
   }
 }
 
-.multi-select__choices[data-type*='select-multiple'] {
+.multi-select__choices[data-type*="select-multiple"] {
   .multi-select__choices__inner {
     cursor: text;
   }
 }
 
-.multi-select__choices[data-type*='text'] {
+.multi-select__choices[data-type*="text"] {
   .multi-select__choices__inner {
     cursor: text;
   }
@@ -141,13 +143,9 @@
 }
 
 .multi-select__choices__list {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  width: 100%;
+  display: inline-block;
   max-height: 10rem;
   overflow: auto;
-  border-top: 1px solid @multi-select-choices-border-color;
 }
 
 .multi-select__choices__list--single {
@@ -177,7 +175,7 @@
     &:after {
       @icon-size: 8px;
 
-      content: '';
+      content: "";
       background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEiIGhlaWdodD0iMjEiIHZpZXdCb3g9IjAgMCAyMSAyMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjRkZGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0yLjU5Mi4wNDRsMTguMzY0IDE4LjM2NC0yLjU0OCAyLjU0OEwuMDQ0IDIuNTkyeiIvPjxwYXRoIGQ9Ik0wIDE4LjM2NEwxOC4zNjQgMGwyLjU0OCAyLjU0OEwyLjU0OCAyMC45MTJ6Ii8+PC9nPjwvc3ZnPg==);
       background-size: cover;
       color: white;
@@ -198,7 +196,7 @@
   }
 }
 
-[dir='rtl'] {
+[dir="rtl"] {
   .multi-select__choices__list--multiple {
     .multi-select__choices__item {
       margin-right: 0;
@@ -303,7 +301,7 @@
 }
 
 .multi-select__choices__item--hidden {
-  display: none
+  display: none;
 }
 
 .multi-select__choices__message {

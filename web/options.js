@@ -17,4 +17,5 @@ export default [
   { key: 'BR', text: 'Brazil' },
   { key: 'FR', text: 'France' },
   { key: 'PL', text: 'Poland' },
+  { key: 'LN', text: 'The United Kingdom of Great Britain and Northern Ireland' },
 ]
