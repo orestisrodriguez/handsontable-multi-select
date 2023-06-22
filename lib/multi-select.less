@@ -122,8 +122,8 @@
   padding: 3px 3px 0;
   border: 2px solid @multi-select-choices-selected-background-color;
   font-size: 14px;
-  min-height: 30px;
   overflow: hidden;
+  max-height: 150px;
   position: relative;
 }
 
@@ -168,7 +168,7 @@
     margin-right: 3.75px;
     margin-bottom: 3.75px;
     background-color: @multi-select-choices-selected-background-color;
-    border: 1px solid @multi-select-choices-selected-background-color;
+    border: 2px solid @multi-select-choices-selected-background-color;
     color: @multi-select-choices-selected-text-color;
     word-break: break-all;
     box-sizing: border-box;
@@ -230,7 +230,9 @@
   visibility: visible;
   z-index: 1;
   background-color: @multi-select-choices-input-color;
-  border: 1px solid @multi-select-choices-border-color;
+  border: 2px solid @multi-select-choices-border-color;
+  border-top: 0;
+  border-radius: 0 0 5px 5px;
   overflow: auto;
   word-break: break-all;
   will-change: visibility;
@@ -283,6 +285,7 @@
   cursor: pointer;
   white-space: nowrap;
   user-select: none;
+  font-weight: bold;
 }
 
 .multi-select__choices__item--selectable {
