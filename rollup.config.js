@@ -25,7 +25,7 @@ const demoConf = () => ({
       handsontable: 'Handsontable',
     },
   },
-  plugins: [ serve('web'), styles(), livereload() ],
+  plugins: [ serve('web'), styles(), livereload({ port: 9999 }) ],
 })
 
 const getConf = isDemoEnvironment

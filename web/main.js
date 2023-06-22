@@ -18,6 +18,9 @@ const numberOptions = Array(50)
 
 Handsontable(sheet, {
   data,
+  modifyColWidth: (width) => (
+    width > 100 ? 100 : width
+  ),
   licenseKey: 'non-commercial-and-evaluation',
   rowHeaders: true,
   colHeaders: headers,
