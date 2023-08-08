@@ -56,9 +56,7 @@ Handsontable(sheet, {
           isMultiple: false,
         },
         options (source, value) {
-          return new Promise((resolve) => {
-            setTimeout(resolve, 500, numberOptions)
-          })
+          return numberOptions
         },
       },
     },
