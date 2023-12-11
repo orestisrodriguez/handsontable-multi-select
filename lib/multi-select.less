@@ -8,6 +8,7 @@
 @multi-select-choices-border-color: #b7b7b7;
 @multi-select-choices-input-color: #ffffff;
 @multi-select-choices-hovered-background: #ededed;
+@multi-select-cell-popup-error-color: red;
 
 .handsontableInputHolder {
   /* specific to version 0.27.0 */
@@ -349,12 +350,42 @@
   display: flex;
   justify-content: space-between;
 
-  span {
+  &-value {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
     max-width: 100%;
     display: block;
     height: 100%;
+  }
+}
+
+.multi-select__cell-errorpopup {
+  position: absolute;
+  transform: translateY(100%);
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  z-index: 15;
+  display: none;
+  line-height: 20px;
+  border-radius: 2px;
+
+  &.--error {
+    background-color: @multi-select-cell-popup-error-color;
+    color: white;
+  }
+}
+
+.multi-select__cell {
+  position: relative;
+  overflow: visible !important;
+
+  &.--error {
+    background-color: fade(@multi-select-cell-popup-error-color, 40%);
+  }
+
+  &:hover .multi-select__cell-errorpopup {
+    display: block !important;
   }
 }
