@@ -2,7 +2,7 @@
   "name": "handsontable-multi-select",
   "version": "1.3.0",
   "description": "Handsontable editor and renderer for multi-select cells",
-  "main": "dist/multi-select.js",
+  "main": "dist/js/handsontable-multi-select.js",
   "repository": "https://github.com/orestisrodriguez/handsontable-multi-select",
   "author": "Orestis Rodriguez <orestis@orestisrodriguez.com>",
   "license": "MIT",
