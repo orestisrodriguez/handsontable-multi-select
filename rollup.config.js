@@ -13,7 +13,7 @@ const bundleConf = () => ({
     format: 'cjs',
   },
   plugins: [ resolve(), babel({ babelHelpers: 'bundled' }) ],
-  external: [ 'handsontable' ],
+  external: [ 'handsontable', 'debounce-fn' ],
 })
 
 const demoConf = () => ({
@@ -25,7 +25,8 @@ const demoConf = () => ({
       handsontable: 'Handsontable',
     },
   },
-  plugins: [ serve('web'), styles(), livereload() ],
+  plugins: [ resolve(), serve('web'), styles(), livereload() ],
+  external: [ 'handsontable' ],
 })
 
 const getConf = isDemoEnvironment
